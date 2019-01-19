@@ -14,23 +14,27 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
 <body>
+    <header>
+        <div class="container">
+            <h1 class="display-4">Giftastic TV</h1>
+            <p class="lead">Choose a button and then click an image for gifs!</p>
+        </div>
+    </header>
 
     <div class="container">
 
-        <header class="text-center">
-                <br>
-            <h1>TV Comedy Gifs</h1>
-            <h5 class="text-muted">Click a button below for laughs!</h5>
-        </header>
+        <div class="wrapper">
 
-        <br><hr><br>
+        <div class="row buttons-view">
 
-        <div class="row">
-
-            <div class="col-sm-9 col-md-6 col-12">
+            <div>
 
                 <div id="add-buttons">
 
@@ -38,26 +42,28 @@
 
             </div>
 
-            <div class="col-sm-3 col-md-6 col-12">
+            <div >
 
-                <div class="create-button">
+                <div class="create-button align-middle">
                     <form class="form-inline mx-auto" id="comedy-form">
-                        <label for="comedy-input" class="col-form-label mr-3 mb-3">Add a TV Comedy!</label>
-                        <input class="form-control mb-3" type="text" id="comedy-input"><br>
+                        <label for="comedy-input" class="col-form-label mr-3 mb-3 mt-2 align-text-bottom">Add a TV Comedy!</label>
+                        <input class="form-control mr-3 mb-3 mt-2" type="text" id="comedy-input"><br>
 
-                        <input class="btn btn-primary form-control" id="add-comedy" type="submit" value="Create New Button">
-                        </form>
+                        <input class="btn btn-primary form-control mb-3 mt-2" id="add-comedy" type="submit" value="Create New Button">
+                    </form>
                 </div>
 
             </div>
 
         </div>
 
-        <div class="row">
+        <div>
 
-            <div class="gifs">
+            <div class="gifs grid-container" >
 
             </div>
+
+        </div>
 
         </div>
 

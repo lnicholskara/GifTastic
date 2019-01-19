@@ -28,6 +28,7 @@ function displayComedyGifs (){
             var imageLinkAnimate = gifsArray[i].images.fixed_width.url;
 
             cardText.text("Rating: " + rating);
+            cardText.addClass("rating-label")
             image.attr("src", imageLinkStill);
             image.attr("data-still", imageLinkStill);
             image.attr("data-animate", imageLinkAnimate);
