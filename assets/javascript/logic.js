@@ -1,11 +1,11 @@
 var comedies = ["Brooklyn 99", "Parks and Recreation", "The Simpsons", "30 Rock", "The Office", "New Girl", "The Big Bang Theory"]
 
 function displayComedyGifs (){
-    $(".comedyGif").empty();
+    $(".gifs").empty();
 
     var comedyName = $(this).attr("data-name");
     var comedy = comedyName.trim().split(" ").join("+")
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + comedy + "&api_key=Hn36qDAbkGH4Lcui5Bgln8LZXZDgEtAu&limit=10&rating=g"
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + comedy + "&api_key=Hn36qDAbkGH4Lcui5Bgln8LZXZDgEtAu&limit=10&rating=g"
 
     $.ajax({
         url: queryURL,
@@ -20,8 +20,6 @@ function displayComedyGifs (){
             var newDiv = $("<div>");
             var image = $("<img>");
             var cardText = $("<p>");
-    
-            newDiv.addClass("comedyGif col-sm-3");
 
             var rating = gifsArray[i].rating;
             var imageLinkStill = gifsArray[i].images.fixed_width_still.url;
