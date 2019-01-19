@@ -21,15 +21,18 @@ function displayComedyGifs (){
             var image = $("<img>");
             var cardText = $("<p>");
     
-            newDiv.addClass("card comedyGif col-sm-3");
-            image.addClass("card-img-top");
-            cardText.addClass("card-text");
+            newDiv.addClass("comedyGif col-sm-3");
 
             var rating = gifsArray[i].rating;
-            var imageLink = gifsArray[i].images.downsized_large.url;
+            var imageLinkStill = gifsArray[i].images.fixed_width_still.url;
+            var imageLinkAnimate = gifsArray[i].images.fixed_width.url;
 
             cardText.text("Rating: " + rating);
-            image.attr("src", imageLink)
+            image.attr("src", imageLinkStill);
+            image.attr("data-still", imageLinkStill);
+            image.attr("data-animate", imageLinkAnimate);
+            image.attr("data-state", "still");
+            image.addClass("giffy");
 
             newDiv.append(image);
             newDiv.append(cardText);
@@ -61,11 +64,30 @@ $(document).on("click", ".comedy", displayComedyGifs);
 $("#add-comedy").on("click", function(event) {
     event.preventDefault();
 
-    var newComedy = $("comedy-input").val().trim();
+    var newComedy = $("#comedy-input").val();
 
     comedies.push(newComedy);
 
+    console.log(comedies)
+
     renderButtons();
+
+});
+
+$(document).on("click", ".giffy", function (event){
+    event.preventDefault();
+
+    var state = $(this).attr("data-state");
+
+    if(state === "still") {
+        $(this).attr("src", $(this).attr("data-animate"));
+        $(this).attr("data-state", "animate")
+    }
+
+    else {
+        $(this).attr("src", $(this).attr("data-still"));
+        $(this).attr("data-state", "still");
+    }
 
 });
 
