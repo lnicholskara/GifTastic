@@ -6,7 +6,7 @@
 
 ## Instructions
 
-* This web page allows you to pull up the 10 top trending gif related to the topic of your choice via the Giffy API.
+This web page allows you to pull up the 10 top trending gif related to the topic of your choice via the Giffy API.
 
 When the page loads, a few popular TV shows will automatically populate as buttons. To see gifs for the particular program or topic, click on the button to populate 10 gifs, loaded as stills, along with each gifs rating.
 
