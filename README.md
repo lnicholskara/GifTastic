@@ -8,6 +8,10 @@ https://lnicholskara.github.io/GifTastic/
 
 [`index.html`](index.html)
 
+## Screenshot
+
+![Image of homescreen] ('assets/images/')
+
 ## Summary
 
 This web page allows you to pull up the 10 top trending gif related to the topic of your choice via the Giffy API.
