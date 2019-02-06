@@ -20,11 +20,11 @@ To add additional buttons to the page, use the form to type in your favorite TV 
 
 ## Technologies Used
 
-*HTML
-*CSS
-*Bootstrap
-*Javascript
-*jQuery
+* HTML
+* CSS
+* Bootstrap
+* Javascript
+* jQuery
 
 ## APIs Used
 
