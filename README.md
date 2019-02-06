@@ -28,4 +28,4 @@ To add additional buttons to the page, use the form to type in your favorite TV 
 
 ## APIs Used
 
-*Giffy API
+* Giffy API
