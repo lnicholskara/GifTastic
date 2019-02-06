@@ -1,12 +1,12 @@
 # GifTastic
 
-## Link
-
-https://lnicholskara.github.io/GifTastic/
-
 ## File
 
 [`index.html`](index.html)
+
+## Link
+
+https://lnicholskara.github.io/GifTastic/
 
 ## Screenshot
 
