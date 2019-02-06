@@ -10,7 +10,7 @@ https://lnicholskara.github.io/GifTastic/
 
 ## Screenshot
 
-![Image of homescreen](https://raw.github.com/lnicholskara/GifTastic/assets/images/TVGifsWebApp.png)
+![Image of homescreen](https://raw.github.com/lnicholskara/GifTastic/assets/images/TV Gifs Web App.png)
 
 ## Summary
 
